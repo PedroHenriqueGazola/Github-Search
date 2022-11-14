@@ -3,11 +3,13 @@
   <h1 align="center">Github Search</h1>
  </div>
 <p>Projeto desenvolvido para consumir a API do GitHub e mostrar os repositórios de acordo com a pesquisa do usuário.</p>
+<img src='./public/githubImg.png' />
+<br></br>
 <h2>🚀 Começando</h2>
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
-<br></br>
 
-<img src='./public/githubImg.png' />
+
+
 
 <h2>🔧 Pré-requisitos</h2>
 Para executar o projeto, você precisará ter instalado em sua máquina as seguintes ferramentas:
