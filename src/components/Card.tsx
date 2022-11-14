@@ -44,7 +44,7 @@ export default function Card(repositorio: RepositorioType) {
                 <div className="flex flex-col items-center w-[140px] xl:w-[180px] gap-4 overflow-hidden ">
                     <h1 className="text-xl xl:text-2xl font-semibold text">{repositorio.name}</h1>
                     {repositorio.description && (
-                        <p className="text-gray-400 text-xs text-clip text-left border-2 border-gray-800 rounded-lg p-2 w-[140px] xl:w-[180px] max-h-[210px]">{repositorio.description}</p>
+                        <p className="text-gray-400 text-xs text-clip text-left border-2 border-gray-800 rounded-lg p-2 w-[140px] xl:w-[180px] max-h-[150px]">{repositorio.description}</p>
                     )}
                     
                 </div>
