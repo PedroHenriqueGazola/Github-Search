@@ -3,7 +3,6 @@ interface FilterProps {
     setFilter: (filter: string) => void;
 }
 
-
 export default function Filter({ filter, setFilter }: FilterProps) {
     return (
         <div>

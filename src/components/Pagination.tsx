@@ -18,11 +18,12 @@ export const Pagination = ({limit, total, offset, setOffset}: PaginationProps) =
     }
 
     return (
-        <ul className="flex flex-row items-center gap-2 p-2 flex-wrap">
+        <ul className="flex flex-row items-center gap-2 p-4 flex-wrap">
             <li>
                 <button
                 onClick={() => onPageChange(current - 1)}
                 disabled={current === 1}
+                className='hidden md:block'
                 >
                     Anterior
                 </button>
@@ -30,10 +31,10 @@ export const Pagination = ({limit, total, offset, setOffset}: PaginationProps) =
             {Array.from({length: Math.min(MAX_ITENS, pages)})
             .map((_, index) => index + first)
             .map((page) => (
-                <li key={page} className="border border-gray-800 w-8 text-center rounded-md"  >
+                <li key={page} className="border border-gray-800 text-center rounded-md w-5 sm:w-8"  >
                     <button
                     onClick={() => onPageChange(page)}
-                    className={page === current ? 'bg-gray-800 w-full' : ''}
+                    className={page === current ? 'bg-gray-800 w-full ' : ''}
                     >
                         {page}
                     </button>
@@ -43,6 +44,7 @@ export const Pagination = ({limit, total, offset, setOffset}: PaginationProps) =
                 <button
                 onClick={() => onPageChange(current + 1)}
                 disabled= { current === pages}
+                className='hidden md:block'
                 >
                     Proxima
                 </button>

@@ -1,8 +1,6 @@
-import { InputHTMLAttributes, useState } from 'react'
+import { useState } from 'react'
 import Input from './Input'
 import { useRouter } from 'next/router';
-
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> { }
 
 export default function Navbar() {
     const [search, setSearch] = useState("");

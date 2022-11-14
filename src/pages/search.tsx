@@ -49,24 +49,20 @@ export default function Search() {
     }, [search, offset, filter]);
     return (
         <div className="flex flex-col items-center mx-auto max-w-[1600px] border-b-[1px] border-b-gray-800">
-            <div className="flex flex-col sm:flex-row items-center mt-4 mb-8 gap-8">
+            <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-around mt-4 mb-8 w-full">
                 <Navbar />
-
                 <Filter filter={filter} setFilter={setFilter} />
             </div>
 
-
-            <div className="flex flex-col justify-center items-center gap-6 lg:grid lg:grid-cols-2 xl:grid-cols-3 ">
+            <div className="flex flex-col justify-center sm:justify-between items-center gap-6 lg:grid lg:grid-cols-2 xl:grid-cols-3">
                 {repositorios.map((repositorio: RepositorioType) => (
                     <Card {...repositorio} key={repositorio.id} />
                 ))}
-
             </div>
             {!removeLoading && <Loading />}
             {repositorios.length > 0 && (
                 <Pagination offset={offset} setOffset={setOffset} total={total} limit={9} />
             )}
-            
         </div>
     )
 }

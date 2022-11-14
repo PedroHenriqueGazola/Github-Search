@@ -6,8 +6,7 @@ export default function Document() {
     return(
         <Html className="bg-background min-h-screen flex flex-col gap-14">
             <Head>  
-                
-                <link rel="shortcut icon" href="/github.png" type="image/x-icon" />
+                <link rel="shortcut icon" href="/githubicon.png" type="image/x-icon" />
             </Head>
             <Header />
             <Main />
