@@ -18,7 +18,7 @@ export default function Navbar() {
     }
 
     return (
-            <form onSubmit={handlesubmit} className='flex flex-row items-center  gap-4 '>
+            <form onSubmit={handlesubmit} className='flex flex-col sm:flex-row items-center gap-4 '>
                 <Input name='input' id='input' placeholder='Pesquise no Github...' onChange={(e) => setSearch(e.target.value)} value={search} />
                 <button
                     type="submit"

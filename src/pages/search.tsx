@@ -49,14 +49,14 @@ export default function Search() {
     }, [search, offset, filter]);
     return (
         <div className="flex flex-col items-center mx-auto max-w-[1600px] border-b-[1px] border-b-gray-800">
-            <div className="flex items-center mt-4 mb-8 gap-8">
+            <div className="flex flex-col sm:flex-row items-center mt-4 mb-8 gap-8">
                 <Navbar />
 
                 <Filter filter={filter} setFilter={setFilter} />
             </div>
 
 
-            <div className="grid grid-cols-3 gap-10">
+            <div className="flex flex-col justify-center items-center gap-6 lg:grid lg:grid-cols-2 xl:grid-cols-3 ">
                 {repositorios.map((repositorio: RepositorioType) => (
                     <Card {...repositorio} key={repositorio.id} />
                 ))}

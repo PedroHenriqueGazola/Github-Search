@@ -18,7 +18,7 @@ export const Pagination = ({limit, total, offset, setOffset}: PaginationProps) =
     }
 
     return (
-        <ul className="flex flex-row items-center gap-2 p-2">
+        <ul className="flex flex-row items-center gap-2 p-2 flex-wrap">
             <li>
                 <button
                 onClick={() => onPageChange(current - 1)}
