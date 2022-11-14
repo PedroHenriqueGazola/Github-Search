@@ -5,24 +5,44 @@
 <p>Projeto desenvolvido para consumir a API do GitHub e mostrar os repositórios de acordo com a pesquisa do usuário.</p>
 <h2>🚀 Começando</h2>
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+<br></br>
+
+<img src='./public/githubImg.png' />
+
+<h2>🔧 Pré-requisitos</h2>
+Para executar o projeto, você precisará ter instalado em sua máquina as seguintes ferramentas:
+
+```
+- NodeJs
+- Git
+```
+
+<h2><img src="./public/git_6.png" width='25px'> Clonando o Repositório</h2>
+Com o Git e o Node.js instalado na sua maquina e a URL do projeto em mãos, cria em algum lugar do seu pc uma pasta para criarmos uma copia do repositório, dentro dela abra o cmd ou powershell e digite os comandos abaixo:
+
+```
+- git clone https://github.com/PedroHenriqueGazola/Github-Search.git
+- cd video-maker
+```
+
 <h2>🔧 Instalação</h2>
 
 Para instalar os requisitos do projeto, basta rodar o seguinte comando:
 
 ```
-npm install
+- npm install
 ```
 
 Para rodar o programa em ambiente de desenvolvimento, basta rodar:
 
 ```
-npm run dev
+- npm run dev
 ```
 
 Para buildar o programa, basta rodar:
 
 ```
-npm build
+- npm build
 ```
 <h2>🛠️ Construído com</h2>
 
