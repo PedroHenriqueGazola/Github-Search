@@ -44,7 +44,7 @@ Para rodar o programa em ambiente de desenvolvimento, basta rodar:
 Para buildar o programa, basta rodar:
 
 ```
-- npm build
+- npm run build
 ```
 <h2>🛠️ Construído com</h2>
 
