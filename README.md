@@ -24,7 +24,7 @@ Com o Git e o Node.js instalado na sua maquina e a URL do projeto em mãos, cria
 
 ```
 - git clone https://github.com/PedroHenriqueGazola/Github-Search.git
-- cd video-maker
+- cd Github-Search
 ```
 
 <h2>🔧 Instalação</h2>
